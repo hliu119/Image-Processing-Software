@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88A56706-3EA3-42A3-A92E-03E66EFCCD02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>计算图像</RootNamespace>
+    <AssemblyName>计算图像</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="band.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="band.Designer.cs">
+      <DependentUpon>band.cs</DependentUpon>
+    </Compile>
+    <Compile Include="caculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caculate.Designer.cs">
+      <DependentUpon>caculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="covariation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="covariation.Designer.cs">
+      <DependentUpon>covariation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cumulative_histogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cumulative_histogram.Designer.cs">
+      <DependentUpon>Cumulative_histogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equalization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equalization.Designer.cs">
+      <DependentUpon>equalization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gray.Designer.cs">
+      <DependentUpon>gray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSJZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSJZ.Designer.cs">
+      <DependentUpon>GSJZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="histogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="histogram.Designer.cs">
+      <DependentUpon>histogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="img.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="img.Designer.cs">
+      <DependentUpon>img.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jicha.Designer.cs">
+      <DependentUpon>jicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="juzhen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="juzhen.Designer.cs">
+      <DependentUpon>juzhen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KT_Bright.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KT_Bright.Designer.cs">
+      <DependentUpon>KT_Bright.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KT_Green.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KT_Green.Designer.cs">
+      <DependentUpon>KT_Green.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KT_haze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KT_haze.Designer.cs">
+      <DependentUpon>KT_haze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KT_Wet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KT_Wet.Designer.cs">
+      <DependentUpon>KT_Wet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="K_means_g.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="K_means_g.Designer.cs">
+      <DependentUpon>K_means_g.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logistic.Designer.cs">
+      <DependentUpon>Logistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvbo.Designer.cs">
+      <DependentUpon>lvbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maxlikehood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maxlikehood.Designer.cs">
+      <DependentUpon>maxlikehood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OIF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OIF.Designer.cs">
+      <DependentUpon>OIF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pixel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pixel3.Designer.cs">
+      <DependentUpon>pixel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rgb2hsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rgb2hsi.Designer.cs">
+      <DependentUpon>rgb2hsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="save.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="save.Designer.cs">
+      <DependentUpon>save.cs</DependentUpon>
+    </Compile>
+    <Compile Include="specification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="specification.Designer.cs">
+      <DependentUpon>specification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stastic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stastic.Designer.cs">
+      <DependentUpon>stastic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stretch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stretch.Designer.cs">
+      <DependentUpon>stretch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vegetion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vegetion.Designer.cs">
+      <DependentUpon>vegetion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="band.resx">
+      <DependentUpon>band.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caculate.resx">
+      <DependentUpon>caculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="covariation.resx">
+      <DependentUpon>covariation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cumulative_histogram.resx">
+      <DependentUpon>Cumulative_histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equalization.resx">
+      <DependentUpon>equalization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gray.resx">
+      <DependentUpon>gray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSJZ.resx">
+      <DependentUpon>GSJZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="histogram.resx">
+      <DependentUpon>histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="img.resx">
+      <DependentUpon>img.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jicha.resx">
+      <DependentUpon>jicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="juzhen.resx">
+      <DependentUpon>juzhen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KT_Bright.resx">
+      <DependentUpon>KT_Bright.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KT_Green.resx">
+      <DependentUpon>KT_Green.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KT_haze.resx">
+      <DependentUpon>KT_haze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KT_Wet.resx">
+      <DependentUpon>KT_Wet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="K_means_g.resx">
+      <DependentUpon>K_means_g.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logistic.resx">
+      <DependentUpon>Logistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvbo.resx">
+      <DependentUpon>lvbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maxlikehood.resx">
+      <DependentUpon>maxlikehood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OIF.resx">
+      <DependentUpon>OIF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pixel3.resx">
+      <DependentUpon>pixel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rgb2hsi.resx">
+      <DependentUpon>rgb2hsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="save.resx">
+      <DependentUpon>save.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="specification.resx">
+      <DependentUpon>specification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stastic.resx">
+      <DependentUpon>stastic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stretch.resx">
+      <DependentUpon>stretch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vegetion.resx">
+      <DependentUpon>vegetion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
